@@ -1,10 +1,170 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My site</title>
-  </head>
-  <body>
-test
-  </body>
-</html>
+!DOCTYPE html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url(https://i.ytimg.com/vi/UnTeBC2YwK0/maxresdefault.jpg);
+      background-size: cover;
+      color: white;
+      font-family: 'Comfortaa', cursive;
+      margin:0 auto;
+    }
+    body{
+      background: url(https://www.clipartsgram.com/image/1034947034-light4.png);
+      background-position: bottom;
+      margin: 0 auto;
+    }
+
+
+    button {
+      margin:0 auto;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: white;
+      background-color: #f22936;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      font-family: 'Comfortaa', cursive;
+      width:500px;
+
+}
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      font-family: 'Comfortaa', cursive;
+    }
+    img {
+      margin: 20px 0px 0px 0px;
+      border: 5px solid white;
+      border-radius: 10px;
+    }
+    h2{
+      background-color: grey;
+      text-align: center;
+      font-family: 'Comfortaa', cursive;
+
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+      font-size: 30px;
+      font-family: 'Comfortaa', cursive;
+    }
+    li {
+      font-size: 17px;
+      display: inline;
+      padding: 0px 15px 0px 10px;
+      background-color: white;
+      font-family: 'Comfortaa', cursive;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      font-family: 'Comfortaa', cursive;
+    }
+    p{
+      font-size: 20px;
+      font-family: 'Comfortaa', cursive;
+      display: inline;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+        font-family: 'Comfortaa', cursive;
+      }
+      li {
+        padding: 5px;
+        display: block;
+        font-family: 'Comfortaa', cursive;
+
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src=https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAfwAAAAJGIzNTNhYTdjLWVlNzEtNDRlNy1iMjUwLWIyZGM3ODdjZGNhOA.jpg>
+    <h1>Rachel Fisher</h1>
+    <ul> Ruby, HTML, CSS, and Javascript.
+    </ul>
+  </header>
+
+  <article>
+    <h2>About Me</h2>
+    <p>
+    <button onclick="onClick()">Click for a Random Fact about Rachel</button></p>
+  </article>
+  <article>
+    <h2>Contact Info:</h2>
+    <p>
+      <ul>
+      <li> Rachel Fisher </li>
+      <li> 443-553-4480</li>
+      <li>rachelfisher.dev@gmail.com</li>
+      <li>Github: raefisher89</li>
+    </ul>
+    </p>
+  </article>
+<center>
+
+<script type="text/javascript">
+document.write("<br>")
+
+function onClick() {
+function generateRandomFact(first, last) {
+return Math.floor(Math.random() * (last - first + 1)) + first;
+}
+
+randomfactno = generateRandomFact(1, 10)
+
+if (randomfactno == 1) {
+alert("Rachel enjoys random facts. :p");
+}
+else if (randomfactno == 2) {
+alert("Rachel Fisher graduated from Washington College in 2014, obtaining a BA in Drama. Her senior capstone experience was writing an original play, 'The Triumph of Love and Reality Television'. ");
+}
+else if (randomfactno == 3) {
+alert("Rachel thinks you’re delightful :)");
+}
+else if (randomfactno == 4) {
+alert("Rachel usually watches Survivor while programming. She’s not sure why…");
+}
+else if (randomfactno == 5) {
+alert("Rachel lives above a custom action figure studio.");
+}
+else if (randomfactno == 6) {
+alert("Rachel enjoys opera, cooking, and video games. ");
+}
+else if (randomfactno == 7) {
+alert("Rachel would be happy programming for a commercial website, but will study with an eye towards learning how to program for assistive technologies.");
+}
+else if (randomfactno == 8) {
+alert("Rachel’s mind has been blown to pieces by the new HBO Westworld series. Can we talk about this??? ");
+}
+else if (randomfactno == 9) {
+alert("Rachel once had an Israeli security team sent to retrieve her.");
+}
+else if (randomfactno == 10) {
+alert("Rachel has recently performed with a circus sideshow.");
+}
+else {
+alert("Gosh, I hope this error doesn't happen.");;
+}
+}
+</script>
+</center>
+}
+</script>
+</head>
+</body>
